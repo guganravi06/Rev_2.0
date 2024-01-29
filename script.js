@@ -29,7 +29,7 @@ yesBtn.addEventListener('click',()=>{
 
 function sendSMS() {
     // Make an HTTP POST request to your local server
-    $.post('http://localhost:3000/send-sms', function (data) {
+    $.post('http://spiffy-meerkat-480e70.netlify.app/send-sms', function (data) {
         console.log(data);
      });
 }
