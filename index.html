@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body.yesRedirect {
+            background-color: pink;
+        }
+    </style>
+    <title>To my Mirror</title>
+</head>
+<body>
+    <div class="container">
+            <div class="header_text">
+                <h1>Rajananddine</h1> 
+                <p>unna paakanum...</p>
+                <p>Paesanum....</p>
+                <p>Oru Coffee oda....</p>
+            </div>
+            <div class="gif_container">
+                <img id="dynamicImage" src="sand-clock-bg.gif"alt="image to add">
+            </div>
+        <div class="question">
+            <p>can we meet over a cup of coffee?</p>
+        </div>
+        <div class="button">
+            <button class="btn" id="yesButton" onclick="sendSMS()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/twilio@3.67.0/dist/twilio.min.js"></script>
+    <script src="script.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,149 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(314, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --cust-color: hsl(330, 76%, 45%);
+    --text-color:hsl(305, 51%, 29%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family:sans-serif;
+    background-color: var(--Grayish-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+} 
+
+.container{
+    background-image: url("pink-container-bg.avif");
+    background-size: cover;
+    border-radius: 8px;
+    padding: 14px;
+    box-shadow: 0.5px 5px 5px var(--Light-gray);
+    margin:10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.container h1{
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 40PX;
+    color: var(--cust-color);
+    text-align: center;
+    margin-top: 16px;
+    animation: moveHeader 4s ease-in-out;
+   
+ }
+
+ .container p{
+    font-family: 'Permanent Marker', cursive;
+    font-size: large;
+    color: var(--text-color);
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+ }
+
+ .gif_container{
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.question{
+    font-weight: bold;
+    font-size: xx-large;
+    animation: scaleRotate 2s ease-in-out infinite alternate;
+}
+
+ .btn{
+    background-color: rgb(230, 32, 32);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 32px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: var(--White);
+    box-shadow: 0.5px 5px 5px var(--Light-gray);
+}
+
+#noButton{
+    position: relative;
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+@media (min-width:500px){
+    .container{
+        width: 400px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveHeader {
+    0% {
+        transform: translateX(-20px); /* Initial position */
+    }
+    50% {
+        transform: translateX(20px); /* Move to the right */
+    }
+    100% {
+        transform: translateX(0); /* Return to the original position */
+    }
+}
+
+@keyframes scaleRotate {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(0) rotate(0deg);
+    }
+}
+
+.later-text {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--text-color);
+    font-size: large;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+
+
