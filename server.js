@@ -4,7 +4,7 @@ const twilio = require('twilio');
 const cors = require('cors');  // Import cors module
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());  // Enable CORS for all routes
