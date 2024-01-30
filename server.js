@@ -7,8 +7,12 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors());  // Enable CORS for all routes
-
+// Update CORS configuration to allow requests from your frontend domain
+app.use(cors({
+  origin: 'https://to-my-mirror.netlify.app',
+  methods: 'POST',
+  optionsSuccessStatus: 204,
+}));
 // Replace with your Twilio credentials
 const accountSid = 'ACea985c54e346bc24e68483e1a7f80cb4';
 const authToken = 'b1e86ed51c170238377fd4880cc6181c';
