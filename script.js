@@ -31,7 +31,10 @@ function sendSMS() {
     // Make an HTTP POST request to your local server
     $.post('https://to-my-mirror.netlify.app/send-sms', function (data) {
         console.log(data);
-     });
+     }).fail(function(error) {
+        console.error('Error sending SMS:', error.responseText);
+        // Handle the error as needed, such as showing a user-friendly message
+    });
 }
 
 function moveButton() {
