@@ -147,7 +147,7 @@ body{
 }
 @media (min-width:500px){
     .container{
-        width: 400px;
+        width: 300px;
     }
 }
 @media (max-width: 500px) {
