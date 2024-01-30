@@ -31,6 +31,7 @@ app.post('/send-sms', (req, res) => {
       to: toNumber
     })
     .then((message) => {
+      console.log('Twilio API Response:', message);
       console.log(`Message sent. SID: ${message.sid}`);
       res.send('SMS sent successfully!');
     })
