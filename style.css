@@ -89,11 +89,11 @@ body{
     margin: 0 10px;
 }
 #yesButton{
-    margin-right:30px;
+    margin-right:70px;
 }
 #noButton{
     position: absolute;
-    margin-left: 30px;
+    margin-left: 70px;
     transition: 0.5s;
 }
 
