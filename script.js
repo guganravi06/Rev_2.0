@@ -28,11 +28,14 @@ yesBtn.addEventListener('click',()=>{
 }); 
 
 function sendSMS() {
-    // Make an HTTP POST request to your server
+   // Make an HTTP POST request to your server
   $.ajax({
     url: 'https://to-my-mirror.netlify.app/send-sms',
     method: 'POST',
-    data: {}, // Add any data you need to send here as an object
+    data: {
+      phoneNumber: '+919524003387', // Replace with the actual phone number
+      message: 'She said yes on your website!', // Replace with the actual message
+    },
     success: function (data) {
       console.log(data);
     },
