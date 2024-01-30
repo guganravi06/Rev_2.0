@@ -47,10 +47,11 @@ function sendSMS() {
 }
 
 function moveButton() {
-    var x = Math.random() * (window.innerWidth - 
-        document.getElementById('noButton').offsetWidth - 85);
-    var y = Math.random() * (window.innerHeight - 
-        document.getElementById('noButton').offsetHeight - 48);
+   var containerRect = document.querySelector('.container').getBoundingClientRect();
+    var x = Math.random() * (containerRect.width - 
+        document.getElementById('noButton').offsetWidth);
+    var y = Math.random() * (containerRect.height - 
+        document.getElementById('noButton').offsetHeight);
     document.getElementById('noButton').style.left = x + 'px';
     document.getElementById('noButton').style.top = y + 'px';
 }
