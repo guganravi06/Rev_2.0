@@ -138,6 +138,11 @@ body{
     overflow: hidden;
     white-space: nowrap;
 }
+@media (min-width:500px){
+    .container{
+        width: 400px;
+    }
+}
 @media (max-width: 600px) {
     .container {
         width: 100%;
