@@ -88,10 +88,12 @@ body{
     box-shadow: 0.5px 5px 5px var(--Light-gray);
     margin: 0 10px;
 }
-
+#yesButton{
+    margin-right:15px;
+}
 #noButton{
     position: absolute;
-    margin-left: 0;
+    margin-left: 15px;
     transition: 0.5s;
 }
 
