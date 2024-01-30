@@ -48,10 +48,17 @@ function sendSMS() {
 
 function moveButton() {
    var containerRect = document.querySelector('.container').getBoundingClientRect();
-    var x = Math.random() * (containerRect.width - 
-        document.getElementById('noButton').offsetWidth);
-    var y = Math.random() * (containerRect.height - 
-        document.getElementById('noButton').offsetHeight);
-    document.getElementById('noButton').style.left = x + 'px';
-    document.getElementById('noButton').style.top = y + 'px';
+    var noButton = document.getElementById('noButton');
+    
+    // Log container dimensions for debugging
+    console.log('Container Dimensions:', containerRect);
+
+    var x = Math.random() * (containerRect.width - noButton.offsetWidth);
+    var y = Math.random() * (containerRect.height - noButton.offsetHeight);
+
+    // Log the random coordinates for debugging
+    console.log('Random Coordinates:', { x, y });
+
+    noButton.style.left = x + 'px';
+    noButton.style.top = y + 'px';
 }
