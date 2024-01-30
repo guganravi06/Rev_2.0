@@ -90,7 +90,7 @@ body{
 }
 
 #noButton{
-    position: relative;
+    position: absolute;
     margin-left: 0;
     transition: 0.5s;
 }
