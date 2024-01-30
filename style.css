@@ -90,11 +90,7 @@ body{
     transition: 0.5s;
 }
 
-@media (min-width:500px){
-    .container{
-        width: 400px;
-    }
-}
+
 
 @keyframes fadeIn {
     from {
